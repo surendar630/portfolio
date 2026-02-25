@@ -1,74 +1,184 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SURENDAR R S — Portfolio</title>
+
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-  <div class="container">
-  <header>
-    <div class="branding">
-      <h1>SURENDAR R S</h1>
-      <div class="muted">B.Tech (UG) — Presidency University</div>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="app-development.html">App Development</a>
-      <a href="flight-maintenance.html">Flight Maintenance</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Resume</a>
-    </nav>
-  </header>
+<div class="container">
 
-  <main>
-    <section class="card">
-      <h2>Formal Background</h2>
-      <p>SURENDAR R S — B.Tech (Undergraduate) at Presidency University. Focus areas: Mobile App Development, Software Engineering practices, and Systems for Aircraft Maintenance.</p>
-      <p class="muted">Expected graduation: (add year)</p>
-    </section>
-
-    <section class="card">
-      <h2>Areas of Interest</h2>
-      <ul>
-        <li>Mobile application development (native Android & cross-platform)</li>
-        <li>Maintenance systems and process automation for aviation</li>
-        <li>UX-focused engineering and performance optimisation</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li><strong>TaskMaster</strong> — Task management mobile app. See App Development page for details.</li>
-        <li><strong>Checklist Digitizer</strong> — Flight maintenance checklist and logging tool. See Flight Maintenance page for details.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Java, Kotlin, JavaScript</li>
-        <li>Frameworks: React Native, Flutter (familiar)</li>
-        <li>Tools: Git, CI/CD, basic cloud deployment</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Achievements & Certifications</h2>
-      <p>Add awards, hackathon results, or certificates here (e.g., internships, course certificates).</p>
-    </section>
-
-    <section class="card">
-      <h2>Next Steps</h2>
-      <p>Please provide a phone number, email, GitHub and LinkedIn links (or reply "skip" for any). I will add them to the Contact page and make a commit & push if you want.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p class="muted">This portfolio is a draft — I can add screenshots, repo links, and timelines when provided.</p>
-  </footer>
+<header>
+  <div class="branding">
+    <h1>SURENDAR R S</h1>
+    <div class="muted">B.Tech (UG) — Presidency University</div>
   </div>
+
+  <nav class="main-nav">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <a href="resume-surendar.pdf" download class="download-btn">
+      <i class="fas fa-download"></i> Resume
+    </a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="card" id="dashboard">
+  <h2>Dashboard</h2>
+  <p class="muted">Quick overview and shortcuts to important areas of my portfolio.</p>
+
+  <div class="dashboard-actions">
+    <a class="button" href="#projects">View Projects</a>
+    <a class="button" href="#skills">See Skills</a>
+    <a class="button" href="#resume">Open Resume</a>
+    <a class="button" href="#contact">Hire Me</a>
+  </div>
+
+  <div class="dashboard-stats">
+    <div>
+      <div class="project-meta">Projects</div>
+      <div class="stat">3 Active</div>
+    </div>
+
+    <div>
+      <div class="project-meta">Availability</div>
+      <div class="stat">Open for Freelance</div>
+    </div>
+
+    <div>
+      <div class="project-meta">Response Time</div>
+      <div class="stat">24–48 hrs</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="card" id="projects">
+  <h2>Selected Projects</h2>
+
+  <div class="project-block">
+    <div class="project-meta">Mobile App</div>
+    <h3>TaskMaster</h3>
+    <p>Cross-platform Flutter app with offline sync, push notifications, analytics and role management.</p>
+    <p><strong>Tech:</strong> Flutter, Firebase, REST API</p>
+    <a class="button" href="app-development.html">View Details</a>
+  </div>
+
+  <div class="project-block">
+    <div class="project-meta">Aviation System</div>
+    <h3>Checklist Digitizer</h3>
+    <p>Maintenance workflow automation with audit logs and report exports.</p>
+    <p><strong>Tech:</strong> React Native, Node.js, MySQL</p>
+    <a class="button" href="flight-maintenance.html">View Details</a>
+  </div>
+
+  <div class="project-block">
+    <div class="project-meta">AI + IoT</div>
+    <h3>Water Monitoring System</h3>
+    <p>Raspberry Pi + ML model to detect leaks and anomalies in real-time.</p>
+    <p><strong>Tech:</strong> Python, TensorFlow Lite</p>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="card" id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill"><i class="fab fa-java"></i><span>Java</span></div>
+    <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+    <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+    <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
+    <div class="skill"><i class="fab fa-flutter"></i><span>Flutter</span></div>
+    <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+    <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section class="card" id="resume">
+  <h2>Resume Overview</h2>
+
+  <p><strong>Location:</strong> Bangalore, India<br>
+  <strong>Email:</strong> rssrndar@gmail.com<br>
+  <strong>Phone:</strong> +91 9632584378</p>
+
+  <a href="resume-surendar.pdf" download class="button">
+    <i class="fas fa-file-pdf"></i> Download Full Resume
+  </a>
+
+  <h3 style="margin-top:20px;">Summary</h3>
+  <p>Computer Science student focused on building production-ready mobile applications and domain-specific workflow tools.</p>
+
+  <h3>Experience</h3>
+  <ul>
+    <li>Trilochana Aerospace Defence Technology — Intern</li>
+    <li>Edu Tantra — Mobile App Development Intern</li>
+  </ul>
+
+  <h3>Education</h3>
+  <p>B.Tech CSE — Presidency University (Expected 2026)</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="card" id="contact">
+  <h2>Contact</h2>
+  <p>Interested in working together? Let’s build something impactful.</p>
+
+  <div class="contact-links">
+    <a class="button" href="mailto:rssrndar@gmail.com">
+      <i class="fas fa-envelope"></i> Email Me
+    </a>
+
+    <a class="button" href="https://github.com/surendar630" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a class="button" href="https://www.linkedin.com/in/surendar-r%20s-038773256" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="muted">© 2026 Surendar R S — Portfolio</p>
+</footer>
+
+</div>
+
+<script>
+const navLinks = Array.from(document.querySelectorAll('.main-nav a[href^="#"]'));
+const sections = navLinks.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+function setActive() {
+  const y = window.scrollY + 120;
+  let current = sections[0];
+  for (const s of sections) {
+    if (s.offsetTop <= y) current = s;
+  }
+  navLinks.forEach(a =>
+    a.classList.toggle('active',
+      document.querySelector(a.getAttribute('href')) === current
+    )
+  );
+}
+
+window.addEventListener('scroll', setActive);
+window.addEventListener('load', setActive);
+</script>
+
 </body>
 </html>
